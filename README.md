@@ -1,12 +1,34 @@
-## running rabbitMQ on docker
+### RabbitMQ-demo
+
+This project is developed to understand the working of rabbitMQ
+
+## Running project locally
+
+- run rabbitMQ broker locally
 
 ```
 docker run --name rabbitmq -p 5672:5672 rabbitmq
+```
+- Clone this repo
+
+- Install the packages using `npm install`
+
+- Run the Publisher
+
+```
+npm run publisher
+```
+
+- Run the Consumer (in another terminal)
+
+```
+npm run consumer
 ```
 
 ## Application 
 
 `Publisher`: Produces messages to rabbitmq server
+
 `Consumer`: listen the channel and consume messages
 
 
